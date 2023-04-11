@@ -240,7 +240,7 @@
                 const subject = document.getElementById('EmailSubject').value;
                 const message = document.getElementById('Message').value;
                
-                const text =X`%0AName: ${name}%0AEmail: ${email}%0ANumber: ${number}%0ASubject: ${subject}%0AXabar: ${message}%0A`;
+                const text =`--------------%0AName: ${name}%0AEmail: ${email}%0ANumber: ${number}%0ASubject: ${subject}%0AXabar: ${message}%0A`;
                 const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`;
                 fetch(url)
                     .then(response => {
