@@ -8,6 +8,10 @@
 
     
 }
+
+::-webkit-scrollbar{
+    width: 0;
+ }
 html{
     font-size: 65.5%;
     overflow-x: hidden;
@@ -47,7 +51,7 @@ padding: 10rem 9% 2rem;
 }
 
 header.sticky {
-    border-bottom: .1rem solid rgba( 0, 0, 0, .2);
+    border-bottom: .1rem solid rgba(255, 255, 255, 0.2);
 }
 
 .logo{
@@ -486,10 +490,20 @@ color: var(--second-bg-color);
 
 
 
+
+
  @media (max-width:991px) {
     .header{
         padding: 2rem 3%;
 
+    }
+
+
+    .timeWork {
+        position: fixed;
+        top: 83%;
+        left: 40%;
+ 
     }
 
     .portfolio-container{
@@ -522,6 +536,18 @@ color: var(--second-bg-color);
 
 
  @media (max-width:768px) {
+
+    .timeWork {
+        position: fixed;
+        top: 83%;
+        left: 12%;
+ 
+    }
+
+
+
+
+
     #menu-icon{
         display: block;
 
@@ -582,12 +608,6 @@ color: var(--second-bg-color);
         width: 100vw;
         margin-top: 4rem;
     }
-
-    
-
-
-
-
     .close {
         position: absolute;
         transform: translateY(-1000px);
@@ -625,11 +645,47 @@ color: var(--second-bg-color);
     }
  }
 
+ @media (max-width:590px){
+    .timeWork {
+        position: fixed;
+        top: 83%;
+        left: 6%;
+       
  
+    }
+
+ }
+
+ @media (max-width:490px){
+    .timeWork {
+        position: fixed;
+        top: 83%;
+        left: 6%;
+        width: 300px;
+        height: 120px;
+       
+ 
+    }
+
+ }
+
+
+
+
+
 
  @media (max-width:300px){
 
- } 
+
+
+    .timeWork {
+        position: fixed;
+        top: 83%;
+        left: 12%;
+        width: 200px;
+ 
+    }
+
  .portfolio-layer h4{
      font-size: 2.0rem;
  }
@@ -647,6 +703,6 @@ color: var(--second-bg-color);
  }
 
 
- ::-webkit-scrollbar{
-    width: 0;
- }
+ 
+
+} 
