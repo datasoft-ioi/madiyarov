@@ -59,17 +59,3 @@ const typed = new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 });
-
-
-
-
-const ok = document.querySelector('.ok')
-const timeWork = document.querySelector('.timeWork')
-
-
-ok.onclick = () =>{
-    timeWork.classList.add('bottom')
-    setTimeout(() =>{
-        timeWork.style.display = 'none'
-    },1000)
-}
