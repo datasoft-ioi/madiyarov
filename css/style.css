@@ -84,6 +84,7 @@ color: rgb(255, 255, 255);
 
 }
 #menu-icon{
+    margin-left: 0;
      font-size: 3.6rem;
      color: var(--text-color);
      display: none;
@@ -123,7 +124,7 @@ color: rgb(255, 255, 255);
 }
 
 span{
-    font-family:'Rubik Wet Paint' ,sans-serif;
+    font-family:'poppins' ,sans-serif;
     color:var(--second-text-color)
 }
 
@@ -290,21 +291,23 @@ font-size: 2.6rem;
  }
 
  .services-container .services-box:hover{
-    border-color:var(--main-color);
-    transform: scale(1.05);
+    border: 1px solid var(--second-bg-color);
+    transform: scale(1.03);
  }
  
 
  .services-box i{
     font-size: 7rem;
-    color: var(--main-color);
+    color: var(--second-text-color);
  }
 
  .services-box h3{
     font-size: 2.6rem;
+    color: var(--bg-color);
  }
 
  .services-box p {
+    color: var(--bg-color);
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
     
@@ -339,14 +342,14 @@ font-size: 2.6rem;
 
  .portfolio-box img{
     width: 100%;
-   
+    transition: all ease-in-out 3s;
     
      
    
  }
  .portfolio-box:hover img{
-    transform: scale(1.3);
-    transition: all .5s ease;
+    transform: scale(1.1);
+    
     
     
  }
@@ -365,7 +368,7 @@ font-size: 2.6rem;
     flex-direction: column;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: 0.4s ease;
     
 
 }
@@ -376,30 +379,38 @@ transform: translateY(0);
 }
 
 .portfolio-layer h4{
+    color: var(--bg-color);
  font-size: 3rem;
 }
 .portfolio-layer p {
+    color: var(--bg-color);
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
 .portfolio-layer a{
+    color: var(--bg-color);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 5rem;
     height: 5rem;
-    background: var(--text-color);
+    background: var(--bg-color);
     border-radius: 50%;
 }
 .portfolio-layer a i{
 font-size: 2rem;
-color: var(--second-bg-color);
+color: var(--text-color);
 }
 
 /********* 
 *Contact**
 **********/
 
+.cont{
+    color:var(--second-bg-color);
+    text-align: center;
+    font-size: 4.5rem;
+}
 
 .contact h2{
     margin-bottom: 3rem;
@@ -425,7 +436,7 @@ color: var(--second-bg-color);
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--bg-color);
     background: var(--second-bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
@@ -455,89 +466,12 @@ color: var(--second-bg-color);
     background: var(--second-bg-color);
 }
 .footer-text p {
+    color: var(--bg-color);
     width: 100%;
     font-size: 1.6em;
     text-align: center;
 
 }
-
-
-
-
-
-
-
-/* time-work */
-
-.timeWork {
-    position: fixed;
-    top: 83%;
-    left: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    background-color:var(--main-color);
-    box-shadow: 0px 0px 24px 12px rgba(34, 60, 80, 0.2);
-    width: 500px;
-    padding: 20px;
-    z-index: 99999;
-    border-radius: 10px;
-}
-
-.timeWork span {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 13px;
-    color: #6B6B6B;
-
-}
-
-.timeWork span p {
-    background-color: transparent;
-    color: #6B6B6B;
-    margin-right: 30px;
-}
-
-.timeWork p {
-    background-color:var(--section-bg-color);
-    color: white;
-    padding: 20px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.trans {
-    transform: translateY(200px);
-    opacity: 0;
-    transition: all 0.5s ease;
-}
-
-.ok {
-    transition: all 0.3s ease;
-
-}
-
-.ok:active {
-    transform: scale(60%);
-    transition: all 0.3s ease;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -562,6 +496,7 @@ color: var(--second-bg-color);
 
  @media (max-width:991px) {
     .header{
+        width: 80%;
         padding: 2rem 3%;
 
     }
@@ -617,7 +552,7 @@ color: var(--second-bg-color);
 
 
     #menu-icon{
-        display: block;
+        display: flex;
 
     } 
     .portfolio-layer h4{
