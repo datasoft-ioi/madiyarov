@@ -19,7 +19,6 @@
 html{
     font-size: 65.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 
 }
 
@@ -28,6 +27,8 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
+
+    scroll-behavior: smooth;
 }
 body{
     background: var(--bg-color); 
@@ -496,7 +497,7 @@ color: var(--text-color);
 
  @media (max-width:991px) {
     .header{
-        width: 80%;
+        width: 100%;
         padding: 2rem 3%;
 
     }
@@ -552,7 +553,7 @@ color: var(--text-color);
 
 
     #menu-icon{
-        display: flex;
+        display:block;
 
     } 
     .portfolio-layer h4{
@@ -623,13 +624,13 @@ color: var(--text-color);
     }
 
     .home-img img{
-        width:150vw;
+        width:100%;
         margin-top: 4rem;
         
        }
 
        .about-img img{
-        width: 150vw;
+        width: 100%;
         margin-top: 4rem;
     }
 
