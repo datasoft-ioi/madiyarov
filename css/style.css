@@ -85,7 +85,7 @@ color: rgb(255, 255, 255);
 
 }
 #menu-icon{
-    margin-left: 0;
+    margin-left:0;
      font-size: 3.6rem;
      color: var(--text-color);
      display: none;
@@ -97,8 +97,8 @@ color: rgb(255, 255, 255);
 }
 
 .home-img img{
- width:35vw;
- animation: floatImage 4s ease-in-out infinite;
+    width:35vw;
+    animation: floatImage 4s ease-in-out infinite;
  
 }
 
