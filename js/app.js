@@ -61,5 +61,4 @@ const typed = new Typed('.multiple-text',{
 });
 
 
-// new request
 
