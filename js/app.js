@@ -1,7 +1,5 @@
 /*==================toggle icon navbar=================*/
 
-
-
 // menuIcon.onclick = () => {
 //     menuIcon.classList.toggle('bx-x');
 //     navbar.classList.toggle('active');
@@ -61,4 +59,36 @@ const typed = new Typed('.multiple-text',{
 });
 
 
+/*========================  gsap  ==========================*/
 
+
+const content = document.querySelector(".home-content");
+const img = document.querySelector('.home-img');
+const header = document.querySelector('.header')
+
+gsap.defaults({ ease: 'bounce' })
+
+if (window.innerWidth < 769) {
+    gsap.from(content, {
+        duration: 1.7,
+        yPercent: -100
+    })
+    gsap.from (img, {
+        duration: 1.7,
+        yPercent: 90
+    })
+} else {
+    gsap.from(content, {
+        duration: 1.7,
+        xPercent: -100
+    })
+    gsap.from (img, {
+        duration: 1.7,
+        xPercent: 90
+    })
+}
+
+gsap.from(header, {
+    duration: 1,
+    yPercent: -100
+})
