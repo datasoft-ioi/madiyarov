@@ -1,5 +1,6 @@
 /*==================toggle icon navbar=================*/
 
+
 // menuIcon.onclick = () => {
 //     menuIcon.classList.toggle('bx-x');
 //     navbar.classList.toggle('active');
@@ -64,31 +65,61 @@ const typed = new Typed('.multiple-text',{
 
 const content = document.querySelector(".home-content");
 const img = document.querySelector('.home-img');
-const header = document.querySelector('.header')
+const header = document.querySelector('.header');
+const aboutText = document.querySelector('.about-content h2');
 
 gsap.defaults({ ease: 'bounce' })
 
 if (window.innerWidth < 769) {
     gsap.from(content, {
         duration: 1.7,
-        yPercent: -100
+        yPercent: -100,
+        opacity: 0,
+        delay: .7
     })
     gsap.from (img, {
         duration: 1.7,
-        yPercent: 90
+        yPercent: 90,
+        opacity: 0,
+        delay: .7
     })
 } else {
     gsap.from(content, {
         duration: 1.7,
-        xPercent: -100
+        xPercent: -100,
+        opacity: 0,
+        delay: .7
     })
     gsap.from (img, {
         duration: 1.7,
-        xPercent: 90
+        xPercent: 90,
+        opacity: 0,
+        delay: .7
     })
 }
 
-gsap.from(header, {
+const tl = gsap.timeline();
+
+tl.fromTo(header, {
+    duration: .7,
+    yPercent: -100,
+    height: '0',
+}, {
+    duration: .7,
+    yPercent: 0,
+    height: '200px',
+    ease: 'none'
+})
+
+tl.to(header, {
     duration: 1,
-    yPercent: -100
+    height: 'auto',
+    ease: 'back'
+})
+
+gsap.from(aboutText, {
+    duration: .5,
+    opacity: 0,
+    y: '40px',
+    ease: 'none'
 })
