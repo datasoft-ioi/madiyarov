@@ -123,3 +123,12 @@ gsap.from(aboutText, {
     y: '40px',
     ease: 'none'
 })
+
+
+
+// const toggle = document.getElementById('ok');
+// const sidebar = document.getElementById('timeWork');
+// toggle.onclick = function(){
+//     toggle.classList.toggle('active');
+//     sidebar.classList.toggle('active');
+// }
