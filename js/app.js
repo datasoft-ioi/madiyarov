@@ -1,6 +1,7 @@
 /*==================toggle icon navbar=================*/
 
 
+
 // menuIcon.onclick = () => {
 //     menuIcon.classList.toggle('bx-x');
 //     navbar.classList.toggle('active');
@@ -61,14 +62,17 @@ const typed = new Typed('.multiple-text',{
 
 
 /*========================  gsap  ==========================*/
-
+gsap.registerPlugin(ScrollTrigger);
 
 const content = document.querySelector(".home-content");
 const img = document.querySelector('.home-img');
 const header = document.querySelector('.header');
-const aboutText = document.querySelector('.about-content h2');
+const aboutText = document.querySelectorAll('.gsap-text');
+const projectCards = document.querySelectorAll(".gsap-card");
+const serviceCards = document.querySelectorAll(".gsap-card-second");
 
 gsap.defaults({ ease: 'bounce' })
+gsap.registerPlugin(ScrollTrigger)
 
 if (window.innerWidth < 769) {
     gsap.from(content, {
@@ -118,17 +122,26 @@ tl.to(header, {
 })
 
 gsap.from(aboutText, {
+    scrollTrigger: {
+        trigger: aboutText,
+        toggleActions: 'restart none none play'
+    },
     duration: .5,
     opacity: 0,
     y: '40px',
-    ease: 'none'
+    ease: 'none',
+    stagger: .25
 })
 
 
-
-// const toggle = document.getElementById('ok');
-// const sidebar = document.getElementById('timeWork');
-// toggle.onclick = function(){
-//     toggle.classList.toggle('active');
-//     sidebar.classList.toggle('active');
-// }
+gsap.from(projectCards, {
+    scrollTrigger: {
+        trigger: projectCards,
+        toggleActions: 'restart none none play'
+    },
+    duration: .3,
+    opacity: 0,
+    xPercent: -20,
+    ease: 'none',
+    stagger: .3
+})
