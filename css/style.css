@@ -3,12 +3,12 @@
 @import url(https://fonts.googleapis.com/css?family=Rubik+Wet+Paint:regular);
 @import url(https://fonts.googleapis.com/css?family=Electrolize:regular);
 :root{
-     --second-bg-color:#ffbf00; 
+     --second-bg-color:#ff0000; 
     --bg-color:#000000;
     --second-text-color: #eaff00;
     --section-bg-color:#323946;
     --text-color:#fff;
-    --main-color:#0ef;
+    --main-color:rgb(145, 22, 22);
 
     
 }
