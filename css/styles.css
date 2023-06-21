@@ -1,104 +1,15 @@
-/* =================================================================== 
- * Ceevee Main Stylesheet
- * Template Ver. 2.0.0
- * 01-03-2021
- * ------------------------------------------------------------------
- *
- * TOC:
- * # settings and variables
- *      ## fonts
- *      ## colors
- *      ## vertical spacing and typescale
- *      ## grid variables
- * # normalize
- * # basic/base setup styles
- *      ## media
- *      ## typography resets
- *      ## links
- *      ## inputs
- * # Grid v3.0.0
- *      ## medium screen devices
- *      ## tablets
- *      ## mobile devices
- *      ## small mobile devices <= 400px
- * # block grids
- *      ## block grids - medium screen devices
- *      ## block grids - tablets
- *      ## block grids - mobile devices
- *      ## block grids - small mobile devices <= 400px
- * # MISC 
- * # custom grid, block grid STACK breakpoints
- * # base style overrides 
- *      ## links
- * # typography & general theme styles
- *      ## Lists
- *      ## responsive video container
- *      ## floated image
- *      ## tables
- *      ## spacing
- * # preloader
- *      ## page loaded
- * # forms 
- *      ## Style Placeholder Text
- * # buttons 
- * # additional components
- *      ## skillbars
- *      ## alert box
- *      ## pagination 
- * # common and reusable styles
- *      ## animation stuff 
- *      ## MailtoUI style overrides
- * # site header
- *      ## header nav
- *      ## mobile menu toggle 
- * # hero
- *      ## hero content
- *      ## hero social
- *      ## hero scrolldown
- *      ## animate intro content
- * # resume 
- *      ## resume block
- * # portfolio
- *      ## portfolio list
- *      ## modal popup
- * # CTA
- * # testimonials
- *      ## swiper style overrides
- *      ## testimonial slider 
- * # contact
- *      ## contact block
- * # footer
- *      ## footer social
- *      ## copyright
- *      ## go top
- *
- * ------------------------------------------------------------------ */
 
-
-/* ===================================================================
- * # settings and variables
- *
- * ------------------------------------------------------------------- */
-
-/* ------------------------------------------------------------------- 
- * ## fonts
- * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
 :root {
     --font-1: "Inter", sans-serif;
     --font-2: "IBM Plex Serif", serif;
-    /* monospace
-     */
+  
     --font-mono: Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
-/* ------------------------------------------------------------------- 
- * ## colors
- * ------------------------------------------------------------------- */
+
 :root {
-    /* color-1(#11ABB0)
-     * color-2(#F06000)
-     */
+  
     --color-1: hsla(182, 82%, 38%, 1);
     --color-2: hsla(24, 100%, 47%, 1);
 
@@ -3792,6 +3703,10 @@ input[type="button"].btn--primary:focus {
     height: var(--vspace-5);
     border: 1.6rem solid rgba(255, 255, 255, 0.02);
     border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .s-about__content-bottom {
