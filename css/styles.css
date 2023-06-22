@@ -2553,7 +2553,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .skill-bars-fat li .percent60::before {
-    width: 60%;
+    width: 90%;
 }
 
 .skill-bars-fat li .percent65::before {
