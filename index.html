@@ -17,6 +17,7 @@
     ================================================== -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="modal.css">
 
     <!-- script
     ================================================== -->
@@ -661,10 +662,15 @@
                     </div>
 
                     <div class="column large-12">
-                        <a href="#" class="btn btn--primary h-full-width">Let's Talk
-
-                        </a>
+                        <a href="#" class="btn btn--primary h-full-width"><button id="openModal" >Let's Talk</button></a>
                     </div>
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                          <span class="close">&times;</span>
+                          <h2>Modal Title</h2>
+                          <p>This is the modal content.</p>
+                        </div>
+                      </div>
                 </div> <!-- end contact-infos -->
 
             </div>
@@ -705,7 +711,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
+        <script src="./js/modal.js"></script>
 </body>
 
 </html>
