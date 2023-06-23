@@ -3901,6 +3901,7 @@ input[type="button"].btn--primary:focus {
     background-color: white;
     position: relative;
     overflow: hidden;
+    height: 100%;
 }
 
 .folio-item__thumb::before {
