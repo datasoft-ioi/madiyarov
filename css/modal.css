@@ -11,11 +11,6 @@
     justify-content: center;
 }
 
-.modal{
-    width: 30%;
-    height: 50%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.none{
+    display: none;
 }
