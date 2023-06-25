@@ -646,7 +646,7 @@
                                 Email
                             </h5>
                             <p class="contact-block__content">
-                                <a class="mailtoui" href="mailto:sayhello@ceevee.com">madiyarovakmal219@gmail.com</a>
+                                <a class="" href="#">madiyarovakmal219@gmail.com</a>
                             </p>
                         </div> <!-- end contact-block -->
                     </div>
@@ -667,10 +667,6 @@
                       
                      <div class="modal-bg">
                         <div class="modal">
-                                <!------------- contact--us --------------->
-    <section class="contact" id="contact">
-        <h2 class="cont">Contact<span>Me!</span></h2>
-        
         <form name="submit-to-google-sheet" onsubmit="sendTelegramMessage(event)">
             <div class="input-box">
                 <input type="text" id="Name" placeholder="Full Name">
@@ -679,13 +675,16 @@
             </div>
             <div class="input-box">
                 <input type="number" id="Number" placeholder="Mobil Number">
-                <input type="text" id="EmailSubject" placeholder="Email Subject">
                 <span id="b"></span>
             </div>
             
-            <textarea name="Massage" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" id="btn" value="Send Message" class="btn">
+            <textarea name="Massage" id="Message" cols="40" rows="5" placeholder="Your Message"></textarea>
+            <input type="submit" id="btn" value="Send Message" class="btn   class-btn">
             <span id="c"></span>
+
+
+
+            
         </form>
 
     
@@ -699,12 +698,11 @@
                 const name = document.getElementById('Name').value;
                 const email = document.getElementById('Email').value;
                 const number = document.getElementById('Number').value;
-                const subject = document.getElementById('EmailSubject').value;
                 const message = document.getElementById('Message').value;
 
                 
                
-                const text =`--------------%0AName: ${name}%0AEmail: ${email}%0ANumber: ${number}%0ASubject: ${subject}%0AXabar: ${message}%0A`;
+                const text =`--------------%0AName: ${name}%0AEmail: ${email}%0ANumber: ${number}%0ASubject:  ${message}%0A`;
                 const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${text}`;
                 fetch(url)
                     .then(response => {
@@ -718,18 +716,9 @@
             }
 
              </script>
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  
 
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
-        
-
-
-        <script src="/js/app.js"></script>
-    </section>
-
-                            <spam class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></spam>
+                            <span class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" style="fill: rgb(255, 255, 255);"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg></span>
 
                         </div>
                      </div>

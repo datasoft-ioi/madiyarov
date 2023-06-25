@@ -12,7 +12,7 @@
     visibility: hidden;
     opacity: 0;
     transition:visibility 0s, opacity 0.5s;
-
+    
 }
 
 .bg-active{
@@ -22,18 +22,39 @@
 
 .modal{
     position: relative;
-    background-color: #fff;
+    background-color: #141414;
     width: 30%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 10px;
+}
+.class-btn{
+ margin-right: 40px;
 }
 
 .modal-close{
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
+}
+.input-box input{
+    width: 320px;
+    height: 50px;
+    background-color: rgb(124, 124, 124);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+}
+
+.input-box input:active{
+    border: 2px solid white;
+}
+textarea{
+    background-color:rgb(124, 124, 124) ;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
 }
