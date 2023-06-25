@@ -1,8 +1,11 @@
-const modal = document.querySelector('.none')
-const btn = document.querySelector('.btn')
+var modaBtn = document.querySelector('.modal-button')
+var modaBg = document.querySelector('.modal-bg')
+var modaClose = document.querySelector('.modal-close')
 
+modaBtn.addEventListener('click', function(){
+    modaBg.classList.add('bg-active')
+})
 
-btn.onclick = function(){
-    modal.classList.toggle('btn')
-    console.log("Hellow");
-}
+modaClose.addEventListener('click', function(){
+    modaBg.classList.remove('bg-active')
+})
