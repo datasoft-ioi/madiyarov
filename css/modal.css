@@ -9,13 +9,15 @@ body::-webkit-scrollbar{
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgba(176, 176, 176, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
     display: flex;
     align-items: center;
     justify-content: center;
     visibility: hidden;
     opacity: 0;
     transition:visibility 0s, opacity 0.5s;
+    z-index: 100;
     
 }
 
@@ -25,15 +27,17 @@ body::-webkit-scrollbar{
 }
 
 .modal{
+    padding-top: 50px;
     position: relative;
     background-color: #141414;
     width: 30%;
-    height: 70%;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+   
 }
 .class-btn{
  margin-right: 40px;
@@ -84,3 +88,12 @@ textarea{
         width: 100%;
     }
 }
+
+@media screen and (max-width: 347px) {
+    textarea{
+        width: 100%;
+    }
+}
+
+
+
