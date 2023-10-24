@@ -2479,7 +2479,7 @@ input[type="button"].btn--primary:focus {
 .skill-bars-fat li strong {
     font-family: var(--font-1);
     font-weight: 600;
-    color: var(--color-text-dark);
+    color:#fff;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: calc(var(--text-size) * 0.7778);
@@ -2490,7 +2490,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .skill-bars-fat li .progress {
-    background: var(--color-gray-3);
+    background: #8f8d8d;
     position: relative;
     height: 100%;
     border-radius: 3px;
@@ -2502,7 +2502,7 @@ input[type="button"].btn--primary:focus {
     content: "";
     display: block;
     height: 100%;
-    background-color: var(--color-gray-18);
+    background-color: #fff;
 }
 
 .skill-bars-fat li .percent5::before {
@@ -3355,7 +3355,7 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/header-bg-3000.jpg);
+    background-image: url(https://cdn.mos.cms.futurecdn.net/D9bzCVeZLHQnZ6bUWvAkrW.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3372,7 +3372,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     background: black;
-    opacity: .5;
+    opacity: .7;
 }
 
 .s-hero__bg::after {
@@ -3684,7 +3684,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-about {
     --color-border: var(--color-gray-16);
-    background-color: var(--color-gray-17);
+    background-color: #1e1e1e0c;
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
     color: rgba(255, 255, 255, 0.4);
@@ -3696,9 +3696,9 @@ input[type="button"].btn--primary:focus {
 }
 
 .s-about__pic {
-    width: var(--vspace-5);
-    height: var(--vspace-5);
-    border: 1.6rem solid rgba(255, 255, 255, 0.02);
+    width: 170px;
+    height: 170px;
+    border: 1.2rem solid rgba(188, 188, 182, 0.261);
     border-radius: 50%;
     object-fit: cover;
     background-size: cover;
@@ -3745,6 +3745,10 @@ input[type="button"].btn--primary:focus {
 .s-about__content-bottom .btn--download:focus svg path {
     fill: white;
 }
+.about-paragraf-name{
+    color: #fff;
+    font-weight: 600;
+}
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -3771,7 +3775,7 @@ input[type="button"].btn--primary:focus {
         padding-top: var(--vspace-5);
     }
     .s-about__pic {
-        display: none;
+        display: block;
     }
 }
 
@@ -3794,7 +3798,7 @@ input[type="button"].btn--primary:focus {
  *
  * ------------------------------------------------------------------- */
 .s-resume {
-    background-color: white;
+    background: linear-gradient(322deg, rgba(0,0,0,1) 0%, rgba(145,162,166,1) 98%);
     padding-top: calc(6 * var(--space));
     padding-bottom: var(--vspace-4);
 }
@@ -3817,6 +3821,9 @@ input[type="button"].btn--primary:focus {
 .resume-block {
     margin-bottom: var(--vspace-1_75);
 }
+.resume-block p{
+    color: #fff;
+}
 
 .resume-block h4 {
     line-height: 1.080;
@@ -3831,8 +3838,12 @@ input[type="button"].btn--primary:focus {
     margin-top: -.4rem;
     margin-bottom: var(--vspace-0_75);
 }
+.h3{
+    color: #bbbbbb;
+}
 
 .resume-block__header-meta span:first-child {
+    color: #fff;
     margin-right: .6rem;
 }
 
@@ -3844,12 +3855,12 @@ input[type="button"].btn--primary:focus {
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: .12em;
-    color: var(--color-text-light);
+    color: #fff;
 }
 
 .resume-block__header-date::before {
     content: "\2022";
-    color: var(--color-text);
+    color: #fff;
     margin-right: .2rem;
 }
 
@@ -4149,7 +4160,7 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/testimonials-bg-3000.jpg);
+    background-image: url(https://cdn.mos.cms.futurecdn.net/D9bzCVeZLHQnZ6bUWvAkrW.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -4166,7 +4177,7 @@ input[type="button"].btn--primary:focus {
     width: 100%;
     height: 100%;
     background-color: var(--color-gray-19);
-    opacity: .8;
+    opacity: .6;
 }
 
 .s-testimonials h3 {
@@ -4332,6 +4343,9 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .contact-infos .btn {
     margin-top: var(--vspace-0_75);
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .contact-block {
@@ -4364,7 +4378,7 @@ input[type="button"].btn--primary:focus {
     .s-contact {
         padding-bottom: var(--vspace-2);
     }
-    .s-contact__content .column {
+    .s-contact__content  {
         margin: 0;
     }
     .s-contact__content>.column:first-child {
